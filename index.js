@@ -2,7 +2,10 @@ import React from "react";
 import ReactDom from "react-dom"
 import { ModuleFilenameHelpers } from "webpack";
 import App from "./App";
+import Time from "./Time";
 
+ReactDom.render(App, document.getElementById("footer"))
+ReactDom.render(Time, document.getElementById("footer"))
 ReactDom.render(<h1>This is my project</h1>,document.getElementById("root"))
 
 function myinfo(){
